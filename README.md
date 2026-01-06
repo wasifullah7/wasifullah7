@@ -4,7 +4,7 @@
 
 Software engineer building AI-driven cloud solutions, computer vision systems, and scalable web applications.  Currently working on enterprise AI at Strateger AI, previously shipped production systems at Gojins and UNAZ Legal Services.
 
----
+
 
 ## What I Work With
 
@@ -13,7 +13,7 @@ Software engineer building AI-driven cloud solutions, computer vision systems, a
 **LLM Engineering:** Model fine-tuning, Amazon Lex, Amazon Bedrock, prompt engineering  
 **Cloud & DevOps:** AWS (Lambda, SageMaker, API Gateway), Terraform, Terragrunt, Docker
 
----
+
 
 ## Experience
 
@@ -26,7 +26,7 @@ Built business management platforms, a real-time portfolio builder with custom d
 **Junior Software Developer** · UNAZ Legal Services, nowshehra *(Jan 2024 – May 2024)*  
 Developed a lawyer case management application and Zakat automation system. Focused on async programming patterns, responsive UI, and scalable API design.
 
----
+
 
 ## Selected Projects
 
@@ -46,7 +46,7 @@ Fine-tuned models on EmpatheticDialogues dataset.  Automated training pipelines 
 GAN-based image recognition system for assistive communication.   
 `GAN` `TensorFlow` `Computer Vision`
 
----
+
 
 ## Education & Certifications
 
@@ -55,7 +55,7 @@ Web Development Specialization · Vanderbilt University
 Computer Vision Expert · Deeplearning.ai  
 Applied Machine Learning · LinkedIn Learning
 
----
+
 
 ## GitHub Activity
 
@@ -63,7 +63,7 @@ Applied Machine Learning · LinkedIn Learning
   <img src="https://github-readme-stats.vercel.app/api?username=wasifullah7&show_icons=true&theme=default&hide_border=true&count_private=true" alt="GitHub Stats" />
 </p>
 
----
+
 
 ## Contact
 
