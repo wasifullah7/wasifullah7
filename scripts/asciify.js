@@ -18,7 +18,9 @@ const RAMP = "@%#*+=-:. ";
 (async () => {
   const meta = await sharp(SRC).metadata();
   const aspect = (meta.height ?? 1) / (meta.width ?? 1);
-  const rows = Math.max(1, Math.round(COLS * aspect * 0.5));
+  // Cell aspect in the card is LINE_H / CHAR_W = 19 / 8.1, so a character is
+  // 2.35 times taller than it is wide. Sampling at 0.5 stretched the portrait.
+  const rows = Math.max(1, Math.round((COLS * aspect) / 2.35));
 
   const { data, info } = await sharp(SRC)
     .resize(COLS, rows, { fit: "fill" })

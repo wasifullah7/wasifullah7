@@ -164,7 +164,7 @@ function buildSvg(theme, stats, art) {
   const withArt = true;
   const artLines = art.split("\n");
 
-  const CHAR_W = 8.4;
+  const CHAR_W = 8.1;
   const LINE_H = 19;
   const PAD = 26;
   const ART_COLS = withArt ? Math.max(...artLines.map((l) => l.length)) : 0;
@@ -224,7 +224,7 @@ function buildSvg(theme, stats, art) {
   const artSvg = !withArt ? "" : artLines
     .map(
       (line, i) =>
-        `<text x="${PAD}" y="${PAD + (i + 1) * LINE_H}" fill="${t.art}">${esc(line)}</text>`,
+        `<text x="${PAD}" y="${PAD + (i + 1) * LINE_H}" fill="${t.art}" textLength="${(line.length * CHAR_W).toFixed(1)}" lengthAdjust="spacing">${esc(line)}</text>`,
     )
     .join("\n    ");
 
