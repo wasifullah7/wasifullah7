@@ -37,6 +37,17 @@ const THEMES = {
     title: "#1f2328",
     good: "#1a7f37",
   },
+  site: {
+    file: "site_card.svg",
+    bg: "transparent",
+    border: "var(--rule)",
+    art: "var(--faint)",
+    key: "var(--accent)",
+    value: "var(--ink)",
+    dim: "var(--faint)",
+    title: "var(--ink)",
+    good: "var(--accent)",
+  },
 };
 
 const esc = (s) =>
@@ -232,8 +243,8 @@ function buildSvg(theme, stats, art) {
     .join("\n    ");
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="Profile card for Wasif Ullah">
-  <rect width="${width}" height="${height}" rx="10" fill="${t.bg}" stroke="${t.border}"/>
-  <g font-family="SFMono-Regular, ui-monospace, 'JetBrains Mono', Consolas, monospace" font-size="13.5" xml:space="preserve">
+  ${t.bg === "transparent" ? "" : `<rect width="${width}" height="${height}" rx="10" fill="${t.bg}" stroke="${t.border}"/>`}
+  <g font-family="${t.bg === "transparent" ? "var(--font-jetbrains), ui-monospace, monospace" : "SFMono-Regular, ui-monospace, 'JetBrains Mono', Consolas, monospace"}" font-size="13.5" xml:space="preserve">
     ${artSvg}
     ${rightSvg}
   </g>
@@ -250,8 +261,25 @@ if (!token) {
 const art = readFileSync(join(here, "portrait.txt"), "utf8").replace(/\s+$/, "");
 const stats = await collectStats(token);
 
+const SITE_CARD_PATH =
+  process.env.SITE_CARD_PATH ??
+  "C:/Users/Dell/OneDrive/Desktop/portfolio/src/content/github-card.svg";
+
 for (const theme of Object.keys(THEMES)) {
   const svg = buildSvg(theme, stats, art);
+
+  if (theme === "site") {
+    // Only written when the portfolio checkout is present, so CI never fails
+    // on a path that only exists on the author's machine.
+    try {
+      writeFileSync(SITE_CARD_PATH, svg);
+      console.log("wrote the site card to the portfolio");
+    } catch {
+      console.log("portfolio checkout not found, skipped the site card");
+    }
+    continue;
+  }
+
   writeFileSync(join(here, "..", THEMES[theme].file), svg);
   console.log(`wrote ${THEMES[theme].file}`);
 }
