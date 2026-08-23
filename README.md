@@ -54,4 +54,3 @@ Computer Vision Specialization, DeepLearning.AI · Applied Machine Learning, Lin
 
 Open to AI engineering and full-stack roles. **[Get in touch](https://wasif-ullah-portfolio.vercel.app/hire)**
 
-<sub>The card above is generated from the GitHub API by <a href="scripts/generate.mjs">a script</a> and refreshed daily, so the numbers stay current rather than being typed in by hand.</sub>
