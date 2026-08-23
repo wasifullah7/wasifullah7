@@ -161,7 +161,7 @@ const PROFILE = {
 
 function buildSvg(theme, stats, art) {
   const t = THEMES[theme];
-  const withArt = theme !== "site";
+  const withArt = true;
   const artLines = art.split("\n");
 
   const CHAR_W = 8.4;
