@@ -1,72 +1,57 @@
-# Wasif Ullah
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dark_mode.svg">
+  <source media="(prefers-color-scheme: light)" srcset="light_mode.svg">
+  <img alt="Wasif Ullah, Voice AI and Full-Stack AI Engineer at RTC League, Lahore" src="dark_mode.svg">
+</picture>
 
-**Full-Stack AI Engineer · Computer Vision · Cloud Infrastructure**
+---
 
-Software engineer building AI-driven cloud solutions, computer vision systems, and scalable web applications.  Currently working on enterprise AI at Strateger AI, previously shipped production systems at Gojins and UNAZ Legal Services.
+## What I am working on
 
+**Real-time voice agents.** LiveKit and SIP telephony in front of vLLM, with retrieval over a live knowledge base. Latency is the whole problem here: an agent that pauses for a second and a half reads as a dead line rather than a conversation, because people hear the gap and start talking over it. I took that loop from **1.8 seconds to under 300ms**, and hybrid retrieval to **under 150ms**.
 
-
-## What I Work With
-
-**Full Stack:** React, Next.js, Node. js, Express, MongoDB, PostgreSQL, FastAPI, Python  
-**AI/ML & Vision:** RF-DETR, YOLOv8, YOLO-NAS, PaddleOCR, SAM2, TensorFlow, RAG pipelines  
-**LLM Engineering:** Model fine-tuning, Amazon Lex, Amazon Bedrock, prompt engineering  
-**Cloud & DevOps:** AWS (Lambda, SageMaker, API Gateway), Terraform, Terragrunt, Docker
-
-
+**Computer vision.** The AI Board Scanner reads engineering diagrams and turns them into structured JSON using RF-DETR, PaddleOCR and SAM2, at **0.83 mAP** with **97%** arrow-association accuracy. The models were never the hard part. Working out which arrow connects which two boxes, when the shapes overlap and OCR drops half the characters, is.
 
 ## Experience
 
-**Full Stack AI Engineer** · Strateger AI, lahore *(Jul 2025 – Present)*  
-Building the AI Board Scanner—a diagram recognition pipeline using RF-DETR, PaddleOCR, and SAM2 segmentation.  Achieved 0.83 mAP and 97% arrow association accuracy. Deployed LLM-powered conversational agents via Amazon Lex and Bedrock.  Automated cloud infrastructure with Terraform/Terragrunt for multi-region enterprise deployments.
+**Voice AI & Full-Stack AI Engineer** · RTC League, Lahore · *Jul 2025 to present*
+Real-time voice agents on LiveKit and SIP, vLLM tuned across a multi-node GPU cluster, and hybrid retrieval combining vector and keyword search. Designed an on-premise voice platform for a healthcare client where patient data could never leave their hardware. Built the AI Board Scanner diagram pipeline.
 
-**MERN Stack Developer** · Gojins, lahore *(Aug 2024 – Jun 2025)*  
-Built business management platforms, a real-time portfolio builder with custom domain support, and a full HRMS handling payroll, attendance, leave tracking, and performance analytics. Integrated ML for predictive diagnostics and workflow automation. 
+**Full-Stack Developer** · Gojins, Lahore · *Aug 2024 to Jun 2025*
+A full HRMS covering payroll, attendance, leave and performance analytics for a UK enterprise client. A real-time portfolio builder with live editing and custom domains. A CRM as lead backend engineer on a team of five. Cut an image moderation API from 1.67 seconds to 170ms without touching the model.
 
-**Junior Software Developer** · UNAZ Legal Services, nowshehra *(Jan 2024 – May 2024)*  
-Developed a lawyer case management application and Zakat automation system. Focused on async programming patterns, responsive UI, and scalable API design.
+**Junior Software Developer** · UNAZ Legal Services, Hull, UK (remote) · *Oct 2023 to May 2024*
+Lawyer case management backend and a Zakat automation system. Async patterns for notification delivery and case tracking across high-volume workflows.
 
+## Selected work
 
+| Project | Result |
+| --- | --- |
+| **AI Board Scanner** | Diagrams to structured JSON. 0.83 mAP, 97% arrow association |
+| **PPTX Adaptation Agent** | Layout-preserving slide agent with vision self-correction, 1,197 tests |
+| **On-Premise Voice Platform** | Four workstreams under HIPAA constraints, 500 concurrent calls targeted |
+| **Document Intelligence Pipeline** | Offline RAG in 287 MB of models, zero cloud calls |
+| **Content Moderation API** | 1.67s to 170ms median, accuracy held at 96% |
 
-## Selected Projects
+Full case studies: **[wasif-ullah-portfolio.vercel.app/work](https://wasif-ullah-portfolio.vercel.app/work)**
 
-**AI Board Scanner**  
-Diagram recognition pipeline extracting complex graphs from images.  Built binary mask pipelines with KD-Trees, skeletonization, and spatial algorithms. Dockerized FastAPI for AWS deployment.   
-`RF-DETR` `PaddleOCR` `SAM2` `FastAPI` `Docker`
+## Writing
 
-**AI Career Coach**  
-Job recommendation engine using RAG and Pinecone vector database. 89% predictive accuracy on Dice.com job market data.   
-`RAG` `Pinecone` `Python`
+I write up the problems that took the longest to solve.
 
-**LLM Fine-tuning & Deployment**  
-Fine-tuned models on EmpatheticDialogues dataset.  Automated training pipelines and deployed via AWS Lex, Bedrock, and Lambda.  
-`Amazon Bedrock` `AWS Lambda` `LLM`
+- [How I Built a Document AI That Runs Fully Offline in 287 MB](https://wasif-ullah-portfolio.vercel.app/blog)
+- [Architecting Sub-150ms Hybrid RAG for Voice Agents](https://wasif-ullah-portfolio.vercel.app/blog)
+- [How I Reduced Voice AI Latency from 1.8 Seconds to Under 300ms](https://wasif-ullah-portfolio.vercel.app/blog)
+- [How I Optimized vLLM for High Concurrency in Production](https://wasif-ullah-portfolio.vercel.app/blog)
 
-**Pakistani Sign Language Recognition** *(Final Year Project)*  
-GAN-based image recognition system for assistive communication.   
-`GAN` `TensorFlow` `Computer Vision`
+## Education
 
+**BSc (Hons) Computer Science** · University of Engineering & Technology, Mardan · *2021 to 2025* · GPA 3.0 / 4.0
 
+Computer Vision Specialization, DeepLearning.AI · Applied Machine Learning, LinkedIn Learning · Web Development Specialization, Vanderbilt University
 
-## Education & Certifications
+---
 
-**BSc (Hons) Computer Science** · University of Engineering & Technology, Mardan *(2021 – 2025)*  
-Web Development Specialization · Vanderbilt University  
-Computer Vision Expert · Deeplearning.ai  
-Applied Machine Learning · LinkedIn Learning
+Open to AI engineering and full-stack roles. **[Get in touch](https://wasif-ullah-portfolio.vercel.app/hire)**
 
-
-
-## GitHub Activity
-
-<p>
-  <img src="https://github-readme-stats.vercel.app/api?username=wasifullah7&show_icons=true&theme=default&hide_border=true&count_private=true" alt="GitHub Stats" />
-</p>
-
-
-
-## Contact
-
-[LinkedIn](https://www.linkedin.com/in/wasifullahdev/) · [Portfolio](https://v0-professional-portfolio-website-one-kappa.vercel.app/) · [Medium](https://medium.com/@wasifullahdev)
-
-Open to opportunities in AI engineering and full-stack development. 
+<sub>The card above is generated from the GitHub API by <a href="scripts/generate.mjs">a script</a> and refreshed daily, so the numbers stay current rather than being typed in by hand.</sub>

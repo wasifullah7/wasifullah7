@@ -1,0 +1,48 @@
+name: Refresh profile card
+
+# Regenerates the neofetch-style SVGs from the GitHub API so the numbers on the
+# profile stay current without anyone editing a file.
+on:
+  schedule:
+    # 05:20 UTC daily. Off the hour, because scheduled jobs bunch up on it.
+    - cron: "20 5 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/profile-card.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-card
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate the SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate.mjs
+
+      - name: Commit if anything changed
+        run: |
+          if [ -z "$(git status --porcelain -- dark_mode.svg light_mode.svg)" ]; then
+            echo "Stats unchanged, nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dark_mode.svg light_mode.svg
+          git commit -m "Refresh profile card stats"
+          git push
