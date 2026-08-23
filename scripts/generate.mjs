@@ -161,13 +161,14 @@ const PROFILE = {
 
 function buildSvg(theme, stats, art) {
   const t = THEMES[theme];
+  const withArt = theme !== "site";
   const artLines = art.split("\n");
 
   const CHAR_W = 8.4;
   const LINE_H = 19;
   const PAD = 26;
-  const ART_COLS = Math.max(...artLines.map((l) => l.length));
-  const RIGHT_X = PAD + ART_COLS * CHAR_W + 34;
+  const ART_COLS = withArt ? Math.max(...artLines.map((l) => l.length)) : 0;
+  const RIGHT_X = withArt ? PAD + ART_COLS * CHAR_W + 34 : PAD;
 
   // Build the right-hand readout.
   const right = [];
@@ -216,9 +217,11 @@ function buildSvg(theme, stats, art) {
     ...right.filter((r) => r.kind === "kv").map((r) => r.value.length),
     30,
   );
-  const width = Math.ceil(Math.max(980, valueX + (longestValue + 2) * CHAR_W + PAD));
+  const width = Math.ceil(
+    Math.max(withArt ? 980 : 560, valueX + (longestValue + 2) * CHAR_W + PAD),
+  );
 
-  const artSvg = artLines
+  const artSvg = !withArt ? "" : artLines
     .map(
       (line, i) =>
         `<text x="${PAD}" y="${PAD + (i + 1) * LINE_H}" fill="${t.art}">${esc(line)}</text>`,
