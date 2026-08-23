@@ -83,7 +83,7 @@ async function collectStats(token) {
           totalPullRequestContributions
           totalIssueContributions
         }
-        repositories(first: 100, ownerAffiliations: OWNER, isFork: false) {
+        repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC) {
           totalCount
           nodes {
             stargazerCount
@@ -245,9 +245,18 @@ function buildSvg(theme, stats, art) {
     .filter(Boolean)
     .join("\n    ");
 
+  const embedded = t.bg !== "transparent";
+  const fontFace = embedded
+    ? `<defs><style>@font-face{font-family:"JBMonoCard";font-style:normal;font-weight:400;src:url(data:font/woff2;base64,${FONT_B64}) format("woff2")}</style></defs>`
+    : "";
+  const fontStack = embedded
+    ? "JBMonoCard, ui-monospace, monospace"
+    : "var(--font-jetbrains), ui-monospace, monospace";
+
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="Profile card for Wasif Ullah">
   ${t.bg === "transparent" ? "" : `<rect width="${width}" height="${height}" rx="10" fill="${t.bg}" stroke="${t.border}"/>`}
-  <g font-family="${t.bg === "transparent" ? "var(--font-jetbrains), ui-monospace, monospace" : "SFMono-Regular, ui-monospace, 'JetBrains Mono', Consolas, monospace"}" font-size="13.5" xml:space="preserve" style="font-variant-ligatures:none;font-feature-settings:&quot;liga&quot; 0,&quot;calt&quot; 0,&quot;dlig&quot; 0">
+  ${fontFace}
+  <g font-family="${fontStack}" font-size="13.5" xml:space="preserve" style="font-variant-ligatures:none;font-feature-settings:&quot;liga&quot; 0,&quot;calt&quot; 0,&quot;dlig&quot; 0">
     ${artSvg}
     ${rightSvg}
   </g>
@@ -260,6 +269,18 @@ if (!token) {
   console.error("GITHUB_TOKEN is required");
   process.exit(1);
 }
+
+/**
+ * GitHub renders README images inside <img>, a sandboxed context that cannot
+ * reach any external font. Left to fall back, the browser picks whatever
+ * monospace it happens to have, whose advance width is not the 8.1px CHAR_W
+ * this layout is built on, and the ASCII portrait squeezes horizontally.
+ * Embedding the face as a data URI keeps it inside the sandbox's reach, so the
+ * card renders with identical metrics on GitHub and on the site.
+ */
+const FONT_B64 = readFileSync(
+  join(here, "jetbrains-mono-latin.woff2"),
+).toString("base64");
 
 const art = readFileSync(join(here, "portrait.txt"), "utf8").replace(/\s+$/, "");
 const stats = await collectStats(token);
