@@ -1,46 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="980" height="499" viewBox="0 0 980 499" role="img" aria-label="Profile card for Wasif Ullah">
   <rect width="980" height="499" rx="10" fill="#0d1117" stroke="#30363d"/>
   <g font-family="SFMono-Regular, ui-monospace, 'JetBrains Mono', Consolas, monospace" font-size="13.5" xml:space="preserve" style="font-variant-ligatures:none;font-feature-settings:&quot;liga&quot; 0,&quot;calt&quot; 0,&quot;dlig&quot; 0">
-    <text x="26" y="45" fill="#8b949e" textLength="226.8" lengthAdjust="spacing">                        .::.</text>
-    <text x="26" y="64" fill="#8b949e" textLength="251.1" lengthAdjust="spacing">                     :.........</text>
-    <text x="26" y="83" fill="#8b949e" textLength="259.2" lengthAdjust="spacing">                    :.:-==+*+=.:</text>
-    <text x="26" y="102" fill="#8b949e" textLength="259.2" lengthAdjust="spacing">                    :.===*#+===:</text>
-    <text x="26" y="121" fill="#8b949e" textLength="259.2" lengthAdjust="spacing">                     +++=++=+**-</text>
-    <text x="26" y="140" fill="#8b949e" textLength="251.1" lengthAdjust="spacing">                     -+======+=</text>
-    <text x="26" y="159" fill="#8b949e" textLength="251.1" lengthAdjust="spacing">                      :---:::::</text>
-    <text x="26" y="178" fill="#8b949e" textLength="259.2" lengthAdjust="spacing">                      .==-::=+:.</text>
-    <text x="26" y="197" fill="#8b949e" textLength="299.7" lengthAdjust="spacing">                 .......-=++=:.......</text>
-    <text x="26" y="216" fill="#8b949e" textLength="324.0" lengthAdjust="spacing">             ...........  ::  .........:</text>
-    <text x="26" y="235" fill="#8b949e" textLength="332.1" lengthAdjust="spacing">            :.............. ............:</text>
-    <text x="26" y="254" fill="#8b949e" textLength="340.2" lengthAdjust="spacing">            ...   ...........::.::.. ....:</text>
-    <text x="26" y="273" fill="#8b949e" textLength="340.2" lengthAdjust="spacing">           :....  .................   ...:</text>
-    <text x="26" y="292" fill="#8b949e" textLength="340.2" lengthAdjust="spacing">           ..      ..........      :--....</text>
-    <text x="26" y="311" fill="#8b949e" textLength="340.2" lengthAdjust="spacing">          :-===-:.               .=+++++=-</text>
-    <text x="26" y="330" fill="#8b949e" textLength="340.2" lengthAdjust="spacing">           **#**+-++++==-::.....-+*++****+</text>
-    <text x="26" y="349" fill="#8b949e" textLength="340.2" lengthAdjust="spacing">           +++*+++***+**********#****++++-</text>
-    <text x="26" y="368" fill="#8b949e" textLength="332.1" lengthAdjust="spacing">           +*++++++++=====++++++++++++++=</text>
-    <text x="26" y="387" fill="#8b949e" textLength="324.0" lengthAdjust="spacing">            =+==========--::::-------==-</text>
-    <text x="26" y="406" fill="#8b949e" textLength="307.8" lengthAdjust="spacing">               .........             :</text>
-    <text x="26" y="425" fill="#8b949e" textLength="307.8" lengthAdjust="spacing">                .        ...        ..</text>
-    <text x="400.2" y="45"><tspan fill="#e6edf3" font-weight="700">wasifullah7@github</tspan><tspan fill="#30363d"> ────────────────────────────</tspan></text>
-    <text x="400.2" y="64"><tspan fill="#e05d44">Role</tspan><tspan fill="#6e7681">............</tspan></text><text x="537.9" y="64" fill="#c9d1d9">Voice AI &amp; Full-Stack AI Engineer</text>
-    <text x="400.2" y="83"><tspan fill="#e05d44">Company</tspan><tspan fill="#6e7681">.........</tspan></text><text x="537.9" y="83" fill="#c9d1d9">RTC League, Lahore</text>
-    <text x="400.2" y="102"><tspan fill="#e05d44">Focus</tspan><tspan fill="#6e7681">...........</tspan></text><text x="537.9" y="102" fill="#c9d1d9">Real-time voice agents, computer vision</text>
-    <text x="400.2" y="121"><tspan fill="#e05d44">Shipping since</tspan><tspan fill="#6e7681">..</tspan></text><text x="537.9" y="121" fill="#c9d1d9">2023 · clients in the UK, EU and US</text>
-    <text x="400.2" y="159"><tspan fill="#e05d44">Voice</tspan><tspan fill="#6e7681">...........</tspan></text><text x="537.9" y="159" fill="#c9d1d9">LiveKit, SIP telephony, vLLM, WebRTC</text>
-    <text x="400.2" y="178"><tspan fill="#e05d44">Vision</tspan><tspan fill="#6e7681">..........</tspan></text><text x="537.9" y="178" fill="#c9d1d9">RF-DETR, SAM2, PaddleOCR, PyTorch</text>
-    <text x="400.2" y="197"><tspan fill="#e05d44">Retrieval</tspan><tspan fill="#6e7681">.......</tspan></text><text x="537.9" y="197" fill="#c9d1d9">RAG, pgvector, Qdrant, Pinecone</text>
-    <text x="400.2" y="216"><tspan fill="#e05d44">Backend</tspan><tspan fill="#6e7681">.........</tspan></text><text x="537.9" y="216" fill="#c9d1d9">Python, FastAPI, Node.js, PostgreSQL</text>
-    <text x="400.2" y="235"><tspan fill="#e05d44">Infra</tspan><tspan fill="#6e7681">...........</tspan></text><text x="537.9" y="235" fill="#c9d1d9">AWS, Docker, Terraform, Kubernetes</text>
-    <text x="400.2" y="273"><tspan fill="#e05d44">Portfolio</tspan><tspan fill="#6e7681">.......</tspan></text><text x="537.9" y="273" fill="#c9d1d9">wasif-ullah-portfolio.vercel.app</text>
-    <text x="400.2" y="292"><tspan fill="#e05d44">Writing</tspan><tspan fill="#6e7681">.........</tspan></text><text x="537.9" y="292" fill="#c9d1d9">medium.com/@wasifullahdev</text>
-    <text x="400.2" y="311"><tspan fill="#e05d44">LinkedIn</tspan><tspan fill="#6e7681">........</tspan></text><text x="537.9" y="311" fill="#c9d1d9">linkedin.com/in/wasifullahdev</text>
-    <text x="400.2" y="330"><tspan fill="#e05d44">Email</tspan><tspan fill="#6e7681">...........</tspan></text><text x="537.9" y="330" fill="#c9d1d9">wasif.wwez@gmail.com</text>
-    <text x="400.2" y="368"><tspan fill="#30363d">── </tspan><tspan fill="#e6edf3" font-weight="700">GitHub</tspan><tspan fill="#30363d"> ────────────────────────────────────────</tspan></text>
-    <text x="400.2" y="387"><tspan fill="#e05d44">Repositories</tspan><tspan fill="#6e7681">....</tspan></text><text x="537.9" y="387" fill="#c9d1d9">28</text>
-    <text x="400.2" y="406"><tspan fill="#e05d44">Stars</tspan><tspan fill="#6e7681">...........</tspan></text><text x="537.9" y="406" fill="#c9d1d9">13</text>
-    <text x="400.2" y="425"><tspan fill="#e05d44">Followers</tspan><tspan fill="#6e7681">.......</tspan></text><text x="537.9" y="425" fill="#c9d1d9">7</text>
-    <text x="400.2" y="444"><tspan fill="#e05d44">Contributions</tspan><tspan fill="#6e7681">...</tspan></text><text x="537.9" y="444" fill="#c9d1d9">233 commits · 1 pull request · 0 issues</text>
-    <text x="400.2" y="463"><tspan fill="#e05d44">Code written</tspan><tspan fill="#6e7681">....</tspan></text><text x="537.9" y="463" fill="#c9d1d9">18.2 MB across 28 repositories</text>
+    <text x="26" y="45" fill="#8b949e">                        .::.</text>
+    <text x="26" y="64" fill="#8b949e">                     :.........</text>
+    <text x="26" y="83" fill="#8b949e">                    :.:-==+*+=.:</text>
+    <text x="26" y="102" fill="#8b949e">                    :.===*#+===:</text>
+    <text x="26" y="121" fill="#8b949e">                     +++=++=+**-</text>
+    <text x="26" y="140" fill="#8b949e">                     -+======+=</text>
+    <text x="26" y="159" fill="#8b949e">                      :---:::::</text>
+    <text x="26" y="178" fill="#8b949e">                      .==-::=+:.</text>
+    <text x="26" y="197" fill="#8b949e">                 .......-=++=:.......</text>
+    <text x="26" y="216" fill="#8b949e">             ...........  ::  .........:</text>
+    <text x="26" y="235" fill="#8b949e">            :.............. ............:</text>
+    <text x="26" y="254" fill="#8b949e">            ...   ...........::.::.. ....:</text>
+    <text x="26" y="273" fill="#8b949e">           :....  .................   ...:</text>
+    <text x="26" y="292" fill="#8b949e">           ..      ..........      :--....</text>
+    <text x="26" y="311" fill="#8b949e">          :-===-:.               .=+++++=-</text>
+    <text x="26" y="330" fill="#8b949e">           **#**+-++++==-::.....-+*++****+</text>
+    <text x="26" y="349" fill="#8b949e">           +++*+++***+**********#****++++-</text>
+    <text x="26" y="368" fill="#8b949e">           +*++++++++=====++++++++++++++=</text>
+    <text x="26" y="387" fill="#8b949e">            =+==========--::::-------==-</text>
+    <text x="26" y="406" fill="#8b949e">               .........             :</text>
+    <text x="26" y="425" fill="#8b949e">                .        ...        ..</text>
+    <text x="408.3" y="45"><tspan fill="#e6edf3" font-weight="700">wasifullah7@github</tspan><tspan fill="#30363d"> ────────────────────────────</tspan></text>
+    <text x="408.3" y="64"><tspan fill="#e05d44">Role</tspan><tspan fill="#6e7681">............</tspan></text><text x="546" y="64" fill="#c9d1d9">Voice AI &amp; Full-Stack AI Engineer</text>
+    <text x="408.3" y="83"><tspan fill="#e05d44">Company</tspan><tspan fill="#6e7681">.........</tspan></text><text x="546" y="83" fill="#c9d1d9">RTC League, Lahore</text>
+    <text x="408.3" y="102"><tspan fill="#e05d44">Focus</tspan><tspan fill="#6e7681">...........</tspan></text><text x="546" y="102" fill="#c9d1d9">Real-time voice agents, computer vision</text>
+    <text x="408.3" y="121"><tspan fill="#e05d44">Shipping since</tspan><tspan fill="#6e7681">..</tspan></text><text x="546" y="121" fill="#c9d1d9">2023 · clients in the UK, EU and US</text>
+    <text x="408.3" y="159"><tspan fill="#e05d44">Voice</tspan><tspan fill="#6e7681">...........</tspan></text><text x="546" y="159" fill="#c9d1d9">LiveKit, SIP telephony, vLLM, WebRTC</text>
+    <text x="408.3" y="178"><tspan fill="#e05d44">Vision</tspan><tspan fill="#6e7681">..........</tspan></text><text x="546" y="178" fill="#c9d1d9">RF-DETR, SAM2, PaddleOCR, PyTorch</text>
+    <text x="408.3" y="197"><tspan fill="#e05d44">Retrieval</tspan><tspan fill="#6e7681">.......</tspan></text><text x="546" y="197" fill="#c9d1d9">RAG, pgvector, Qdrant, Pinecone</text>
+    <text x="408.3" y="216"><tspan fill="#e05d44">Backend</tspan><tspan fill="#6e7681">.........</tspan></text><text x="546" y="216" fill="#c9d1d9">Python, FastAPI, Node.js, PostgreSQL</text>
+    <text x="408.3" y="235"><tspan fill="#e05d44">Infra</tspan><tspan fill="#6e7681">...........</tspan></text><text x="546" y="235" fill="#c9d1d9">AWS, Docker, Terraform, Kubernetes</text>
+    <text x="408.3" y="273"><tspan fill="#e05d44">Portfolio</tspan><tspan fill="#6e7681">.......</tspan></text><text x="546" y="273" fill="#c9d1d9">wasif-ullah-portfolio.vercel.app</text>
+    <text x="408.3" y="292"><tspan fill="#e05d44">Writing</tspan><tspan fill="#6e7681">.........</tspan></text><text x="546" y="292" fill="#c9d1d9">medium.com/@wasifullahdev</text>
+    <text x="408.3" y="311"><tspan fill="#e05d44">LinkedIn</tspan><tspan fill="#6e7681">........</tspan></text><text x="546" y="311" fill="#c9d1d9">linkedin.com/in/wasifullahdev</text>
+    <text x="408.3" y="330"><tspan fill="#e05d44">Email</tspan><tspan fill="#6e7681">...........</tspan></text><text x="546" y="330" fill="#c9d1d9">wasif.wwez@gmail.com</text>
+    <text x="408.3" y="368"><tspan fill="#30363d">── </tspan><tspan fill="#e6edf3" font-weight="700">GitHub</tspan><tspan fill="#30363d"> ────────────────────────────────────────</tspan></text>
+    <text x="408.3" y="387"><tspan fill="#e05d44">Repositories</tspan><tspan fill="#6e7681">....</tspan></text><text x="546" y="387" fill="#c9d1d9">38</text>
+    <text x="408.3" y="406"><tspan fill="#e05d44">Stars</tspan><tspan fill="#6e7681">...........</tspan></text><text x="546" y="406" fill="#c9d1d9">13</text>
+    <text x="408.3" y="425"><tspan fill="#e05d44">Followers</tspan><tspan fill="#6e7681">.......</tspan></text><text x="546" y="425" fill="#c9d1d9">7</text>
+    <text x="408.3" y="444"><tspan fill="#e05d44">Contributions</tspan><tspan fill="#6e7681">...</tspan></text><text x="546" y="444" fill="#c9d1d9">233 commits · 1 pull request · 0 issues</text>
+    <text x="408.3" y="463"><tspan fill="#e05d44">Code written</tspan><tspan fill="#6e7681">....</tspan></text><text x="546" y="463" fill="#c9d1d9">21.6 MB across 38 repositories</text>
   </g>
 </svg>
