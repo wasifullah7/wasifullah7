@@ -245,9 +245,22 @@ function buildSvg(theme, stats, art) {
     .filter(Boolean)
     .join("\n    ");
 
+  // xml:space="preserve" is SVG 1.1 and browsers no longer honour it reliably;
+  // whitespace in SVG text comes from the CSS white-space property now. Without
+  // white-space:pre the runs of spaces inside the ASCII rows collapse to one
+  // space each, every gapped row pulls left, and the portrait falls apart.
   const embedded = t.bg !== "transparent";
+  // The rule has to name text directly. Chrome ships a UA declaration for
+  // white-space on text, and a UA rule set on the element beats an author value
+  // merely inherited from the parent group, so styling the <g> does nothing.
+  const fontRule = embedded
+    ? `@font-face{font-family:"JBMonoCard";font-style:normal;font-weight:400;src:url(data:font/woff2;base64,${FONT_B64}) format("woff2")}`
+    : "";
+  // Only the standalone cards carry a style block. The site card is inlined
+  // into the page DOM, where a <style> here would escape into a document-wide
+  // rule; that copy gets its whitespace and font from globals.css instead.
   const fontFace = embedded
-    ? `<defs><style>@font-face{font-family:"JBMonoCard";font-style:normal;font-weight:400;src:url(data:font/woff2;base64,${FONT_B64}) format("woff2")}</style></defs>`
+    ? `<defs><style>text{white-space:pre}${fontRule}</style></defs>`
     : "";
   const fontStack = embedded
     ? "JBMonoCard, ui-monospace, monospace"
@@ -256,7 +269,7 @@ function buildSvg(theme, stats, art) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="Profile card for Wasif Ullah">
   ${t.bg === "transparent" ? "" : `<rect width="${width}" height="${height}" rx="10" fill="${t.bg}" stroke="${t.border}"/>`}
   ${fontFace}
-  <g font-family="${fontStack}" font-size="13.5" xml:space="preserve" style="font-variant-ligatures:none;font-feature-settings:&quot;liga&quot; 0,&quot;calt&quot; 0,&quot;dlig&quot; 0">
+  <g font-family="${fontStack}" font-size="13.5" xml:space="preserve" style="white-space:pre;font-variant-ligatures:none;font-feature-settings:&quot;liga&quot; 0,&quot;calt&quot; 0,&quot;dlig&quot; 0">
     ${artSvg}
     ${rightSvg}
   </g>
