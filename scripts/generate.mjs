@@ -244,7 +244,7 @@ function buildSvg(theme, stats, art) {
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="Profile card for Wasif Ullah">
   ${t.bg === "transparent" ? "" : `<rect width="${width}" height="${height}" rx="10" fill="${t.bg}" stroke="${t.border}"/>`}
-  <g font-family="${t.bg === "transparent" ? "var(--font-jetbrains), ui-monospace, monospace" : "SFMono-Regular, ui-monospace, 'JetBrains Mono', Consolas, monospace"}" font-size="13.5" xml:space="preserve">
+  <g font-family="${t.bg === "transparent" ? "var(--font-jetbrains), ui-monospace, monospace" : "SFMono-Regular, ui-monospace, 'JetBrains Mono', Consolas, monospace"}" font-size="13.5" xml:space="preserve" style="font-variant-ligatures:none;font-feature-settings:&quot;liga&quot; 0,&quot;calt&quot; 0,&quot;dlig&quot; 0">
     ${artSvg}
     ${rightSvg}
   </g>
